@@ -36,3 +36,10 @@ dotnet build
 ```
 
 El menú ofrece preparar café, consultar inventario, recoger un vaso y salir.
+
+## Flujo de ramas
+
+- `main` conserva la versión estable.
+- `develop` reúne los cambios para integración.
+- Cada funcionalidad se trabaja en una rama `feature/*` creada desde `develop`.
+- Al terminar una funcionalidad, se abre un pull request hacia `develop`; después de integrar y validar los cambios, `develop` se integra en `main`.
